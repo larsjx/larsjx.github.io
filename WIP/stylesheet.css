@@ -1,0 +1,117 @@
+    body {
+      background-image: url(imgs/apostles.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+
+    #light-box {
+          position: absolute;
+          top: 180px; left: 140px;
+          width: 57%; height: 75%;
+          margin: 0; padding-left: 20px; padding-right: 20px;
+          overflow: scroll;
+          background: hsla(100,100%,100%,0.25);
+      /* backgrnd alternative: white or none */
+      -webkit-box-shadow: 0 0 10px white;
+          -moz-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+        }
+
+    #heading {
+      position: absolute;
+      top: px; left: 130px; padding-top: 40px; padding-bottom: 10px;
+      font: 48px Helvetica;
+      font-weight: bold;
+      color: #007935;
+      font-size: 6vw;
+    }
+
+        h1 {
+      font: 36px 'Roboto Slab';
+          color: black;
+        }
+
+        h2 {
+      font: 34px 'Roboto Slab';
+          color: black;
+        }
+
+        h3 {
+      font: 28px 'Roboto Slab';
+          color: black;
+        }
+
+        p {
+      font: 28px 'Roboto Slab';
+          color: black;
+        }
+
+        ul {
+          list-style: round outside none;
+      font: 28px/2 'Roboto Slab';
+          color: black;
+          padding-left: 80px;
+        }
+
+        a {
+      font: 24px 'Roboto Slab';
+          color: black;
+          padding-left: 40px;
+        text-decoration: none;
+        }
+
+        a:visited {
+      font: 24px 'Roboto Slab';
+          color: gray;
+          padding-left: 40px;
+          text-decoration: none;
+        }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    /*    width: auto\9;        for IE8 */
+    }
+
+        #menu {
+          position: absolute;
+          top: 60px; left: 10px;
+          width: 6em; height: 6em;
+          margin: 0; padding: 0;
+          -webkit-box-shadow: 0 0 00px black;
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+          list-style: none;
+        }
+
+        #menu a {
+          border-bottom: 0px solid #393939;
+          color: #ccc;
+          display: block;
+          margin: 0;
+          padding: 4px 4px;
+          text-decoration: none;
+          font: 20px Helvetica;
+          color: #333;
+          font-weight: bold;
+        }
+
+        #menu a:hover {
+          background: #2580b2;    <!-- was 2580a2 -->
+          color: #fff;
+          padding-bottom: 4px;
+        }
+
+        #social-links {
+          position: relative;
+          left: 5px; top: 20px;
+          padding: 10px;
+          background: none;
+          -webkit-box-shadow: 0 0 00px black;
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+        }
