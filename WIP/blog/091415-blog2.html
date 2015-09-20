@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>### COPY OF LEJ SITE ###</title>
-      <style>
-        html {
-          background: url(../imgs/apostles.png) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+    <title>### COPY OF LEJ-SEPT 14 ###</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>    
+	<style>
+ 		body {
+    	background-image: url(../imgs/apostles.png); 
+    	background-repeat: no-repeat; 
+    	background-position: left;
+    	background-attachment: fixed;       
+    	-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	background-size: cover; 
+		}
+
+		#heading {
+			position: absolute;
+			top: px; left: 130px; padding-top: 40px; padding-bottom: 10px;
+			font: 48px Helvetica;
+			font-weight: bold;
+			color: #007935;
+			font-size: 6vw;
+		}
+
+       #light-box {
+          position: absolute;
+          top: 180px; left: 140px; 
+          width: 57%; height: 75%;
+          margin: 0; padding-left: 20px; padding-right: 20px;
+          overflow: scroll;
+          background: hsla(100,100%,100%,0.25);
+			/* backgrnd alternative: white or none */
+		  -webkit-box-shadow: 0 0 10px white;
+          -moz-box-shadow: 0 0 10px white; 
+          box-shadow: 0 0 10px white;
         }
 
-        #lej-heading {
-          position: relative;
-          top: 80px; left: 180px;
-          font: 64px Helvetica;
-          font-weight: bold;
-          color: green;
-        }
-
-        #page-wrap {
-          position: relative;
-          top: 20px; left: 80px;
-          width: 35%; margin: 100px ; padding: 20px;
-          background: white;
-          <!-- back: none -->
-          -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 10px black;
+        h1 {
+		  font: 36px 'Roboto Slab';
+          color: black;
         }
 
         h2 {
+		  font: 34px 'Roboto Slab';
           color: black;
-          font: 29px Helvetica;
         }
 
-        a {
+        h3 {
+		  font: 28px 'Roboto Slab';
           color: black;
-          font: 20px/2 Helvetica; margin: 40px;
-          text-decoration: none;
-        }
-
-        a:hover {
-          color: black;
-          font: 24px Helvetica; margin: 40px;
-          text-decoration: none;
-        }
-
-        a:visited {
-          color: purple;
-          font: 20px/2 Helvetica; margin: 40px;
-          text-decoration: none;
         }
 
         p {
-          font: 20px/2 Helvetica; margin: 0 0 30px 0; text-indent: 0px;
+		  font: 28px 'Roboto Slab';
+          color: black;
         }
 
         ul {
-           list-style: round outside none; font: 20px/2 Helvetica;
+          list-style: round outside none;
+ 		  font: 28px/2 'Roboto Slab';
+          color: black;
+          padding-left: 80px;
         }
 
+        a {
+ 		  font: 24px 'Roboto Slab';
+          color: black;
+          padding-left: 40px;
+	      text-decoration: none;
+        }
+
+        a:visited {
+ 		  font: 24px 'Roboto Slab';
+          color: grey;
+          padding-left: 40px;
+          text-decoration: none;
+        }
+
+		img {
+    		max-width: 100%;
+		    height: auto;
+		/*    width: auto\9;        for IE8 */ 
+		}
+
         #cssmenu {
-          -moz-box-shadow: 0 0 1px black; -webkit-box-shadow: 0 0 1px black; box-shadow: 0 0 0px black;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          width: 6em;
           position: absolute;
-          top: 80px;
-          left: 10px;
+          top: 60px; left: 10px;
+          width: 6em; height: 6em;
+          margin: 0; padding: 0;
+          -webkit-box-shadow: 0 0 00px black;
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+          list-style: none;       
         }
 
         #cssmenu a {
@@ -93,12 +117,14 @@
           left: 5px; top: 20px;
           padding: 10px;
           background: none;
-          -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 00px black;
+          -webkit-box-shadow: 0 0 00px black;          
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
         }
       </style>
   </head>
   <body>
-<div id="lej-heading">
+<div id="heading">
 Lars Johnson
 </div>
 <div id="cssmenu">
@@ -116,10 +142,10 @@ Lars Johnson
         </div>
 </div>
 <main>
-      <div id="page-wrap">
+      <div id="light-box">
       <h2>Version Control, Change Management and Code Storage</h2>
-      <h3>Sept 12, 2015 - Git with the Program</h3>
-      <h4>Version Control</h4>
+      <h3>Sept 14, 2015 -- Git with the Program</h3>
+      <h3>Version Control</h3>
       <p>
         Using version control is a way of developing something iteratively and working with a safety net that allows the maker to back up in their creative process. Even better, social version control allows two or more people to participate and play different roles on the same project without inadvertently stepping on each other's work. There are many different software products and services available to facilitate version control and all of them provide the ability to undo changes by going back and forth over time. Of course, they also do much more than that.
       </p>
@@ -132,14 +158,14 @@ Lars Johnson
       <p>
         Modern Version Control Systems (VCS) are software tools that combine the benefits of saving multiple changes, managing undos, and tracking/consolidating changes from different team members – on steroids. Importantly, These systems also enable users to easily fork projects or take them in different directions. While desktop software can provide some of these features for individual files, VCS does the same thing and more across multiple files, directories and subdirectories.
       </p>
-      <h4>Git is a Version Control System</h4>
+      <h3>Git is a Version Control System</h3>
       <p>
         Now that you're familiar with version control, let's be a little more specific and talk about git, one of the most popular VCS products in use today. Git was originally developed by Linus Torvalds and we'll be using it to keep track of changes we make on projects at Dev Bootcamp.
       </p>
       <p>
         Git helps us manage our changes by running locally on our individual computers. We tell it the branch (feature) we're working on, what to track (add), and when to take each snapshot of our changes (commit). We also include comments with these snapshot so our history and progress are easy to navigate. All of this is maintained for each project in an invisible directory on our hard drives called a repository (repo).
       </p>
-      <h4>We share and collaborate on GitHub</h4>
+      <h3>We share and collaborate on GitHub</h3>
       <p>
         While git can be run on its own, we also use the valuable Internet service GitHub to share and collaborate on our git repositories. We use GitHub to maintain copies of each repo including all of our snapshots (commits), branches and comments. This is helpful for several reasons. First, by maintaining a remote copy of our repos we are guarding against their potential loss in the event that our own copies fail for any reason. Second, we are making the content of our repos and the branches we develop available for evaluation/comment and collaborative (or derivative) work. Finally, I expect to learn a great deal (and hope eventually contribute something meaningful) through my participation in the worldwide developer community on GitHub.
       </p>

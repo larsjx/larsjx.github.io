@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>### COPY OF LEJ SITE ###</title>
-      <style>
-        html {
-          background: url(imgs/apostles.png) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+    <title>### COPY OF LEJ-INDEX ###</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>    
+	<style>
+ 		body {
+    	background-image: url(imgs/apostles-only.png); 
+    	background-repeat: no-repeat; 
+    	background-position: left;
+    	background-attachment: fixed;       
+    	-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	background-size: cover; 
+		}
+
+		#heading {
+			position: absolute;
+			top: px; left: 130px; padding-top: 40px; padding-bottom: 10px;
+			font: 48px Helvetica;
+			font-weight: bold;
+			color: #007935;
+			font-size: 6vw;
+		}
+
+       #light-box {
+          position: absolute;
+          top: 180px; left: 140px; 
+          width: 57%; height: 75%;
+          margin: 0; padding-left: 20px; padding-right: 20px;
+          overflow: scroll;
+          background: hsla(100,100%,100%,0.00);
+			/* backgrnd alternative: white or none */
+		  -webkit-box-shadow: 0 0 00px white;
+          -moz-box-shadow: 0 0 00px white; 
+          box-shadow: 0 0 00px white;
         }
 
-        #lej-heading {
-          position: relative;
-          top: 80px; left: 180px;
-          font: 64px Helvetica;
-          font-weight: bold;
-          color: green;
-        }
-
-        #page-wrap {
-          position: relative;
-          top: 20px; left: 80px;
-          width: 35%; margin: 100px ; padding: 20px;
-          background: none;
-          <!-- back: white -->
-          -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 10px black;
+        h1 {
+		  font: 36px 'Roboto Slab';
+          color: black;
         }
 
         h2 {
+		  font: 34px 'Roboto Slab';
           color: black;
-          font: 29px Helvetica;
         }
 
-        a {
+        h3 {
+		  font: 28px 'Roboto Slab';
           color: black;
-          font: 20px/2 Helvetica; margin: 40px;
-          text-decoration: none;
-        }
-
-        a:hover {
-          color: black;
-          font: 24px Helvetica; margin: 40px;
-          text-decoration: none;
-        }
-
-        a:visited {
-          color: purple;
-          font: 20px/2 Helvetica; margin: 40px;
-          text-decoration: none;
         }
 
         p {
-          font: 20px/2 Helvetica; margin: 0 0 30px 0; text-indent: 0px;
+		  font: 28px 'Roboto Slab';
+          color: black;
         }
 
         ul {
-           list-style: round outside none; font: 20px/2 Helvetica;
+          list-style: round outside none;
+ 		  font: 28px/2 'Roboto Slab';
+          color: black;
+          padding-left: 80px;
         }
 
+        a {
+ 		  font: 24px 'Roboto Slab';
+          color: black;
+          padding-left: 40px;
+	      text-decoration: none;
+        }
+
+        a:visited {
+ 		  font: 24px 'Roboto Slab';
+          color: grey;
+          padding-left: 40px;
+          text-decoration: none;
+        }
+
+		img {
+    		max-width: 100%;
+		    height: auto;
+		/*    width: auto\9;        for IE8 */ 
+		}
+
         #cssmenu {
-          -moz-box-shadow: 0 0 1px black; -webkit-box-shadow: 0 0 1px black; box-shadow: 0 0 0px black;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          width: 6em;
           position: absolute;
-          top: 80px;
-          left: 10px;
+          top: 60px; left: 10px;
+          width: 6em; height: 6em;
+          margin: 0; padding: 0;
+          -webkit-box-shadow: 0 0 00px black;
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+          list-style: none;       
         }
 
         #cssmenu a {
@@ -93,12 +117,14 @@
           left: 5px; top: 20px;
           padding: 10px;
           background: none;
-          -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 00px black;
+          -webkit-box-shadow: 0 0 00px black;          
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
         }
       </style>
   </head>
   <body>
-<div id="lej-heading">
+<div id="heading">
 Lars Johnson
 </div>
 <div id="cssmenu">
@@ -116,23 +142,12 @@ Lars Johnson
         </div>
 </div>
 <main>
-<!--
-      <div id="page-wrap">
-        <p>
-          I began my career as a sales person for an enterprise messaging startup in St. Paul Minnesota. Since then, I have been in Chicago where I helped launch, sell and deliver a number of IBM's Internet services. In 17 years at IBM, my primary roles were in:</p>
-		<ul>
-          	<li>complex solution design and delivery</li>
-          	<li>technical sales management</li>
-          	<li>project management</li>
-		</ul>
-        <p>
-     	  I also created global client satisfaction programs for 2 different divisions before becoming an internal strategy consultant and project manager with IBM Global Sales Operations.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum.
-        </p>
-        </div>
--->
+		<div id="light-box">
+			<p><img src="imgs/lej-04.png"></p>
+			<p>
+    	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum.
+	        </p>
+		</div>
 </main>
   </body>
 </html>

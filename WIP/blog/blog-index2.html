@@ -1,109 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>### COPY OF LEJ SITE ###</title>
-      <style>
-				html {
-					background: url(../imgs/apostles.png) no-repeat center center fixed;
-					-webkit-background-size: cover;
-					-moz-background-size: cover;
-					-o-background-size: cover;
-					background-size: cover;
-				}
+    <title>### COPY OF LEJ-BLOG INDEX ###</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>    
+	<style>
+ 		body {
+    	background-image: url(../imgs/apostles.png); 
+    	background-repeat: no-repeat; 
+    	background-position: left;
+    	background-attachment: fixed;       
+    	-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	background-size: cover; 
+		}
 
-				#lej-heading {
-					position: relative;
-					top: 80px; left: 180px;
-					font: 64px Helvetica;
-					font-weight: bold;
-					color: green;
-				}
+		#heading {
+			position: absolute;
+			top: px; left: 130px; padding-top: 40px; padding-bottom: 10px;
+			font: 48px Helvetica;
+			font-weight: bold;
+			color: #007935;
+			font-size: 6vw;
+		}
 
-				#page-wrap {
-					position: relative;
-					top: 20px; left: 80px;
-					width: 35%; margin: 100px ; padding: 20px;
-					background: white;
-					<!-- back: none -->
-					-moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 10px black;
-				}
+       #light-box {
+          position: absolute;
+          top: 180px; left: 140px; 
+          width: 57%; height: 75%;
+          margin: 0; padding-left: 20px; padding-right: 20px;
+          overflow: scroll;
+          background: hsla(100,100%,100%,0.25);
+			/* backgrnd alternative: white or none */
+		  -webkit-box-shadow: 0 0 10px white;
+          -moz-box-shadow: 0 0 10px white; 
+          box-shadow: 0 0 10px white;
+        }
 
-				h2 {
-					color: black;
-					font: 29px Helvetica;
-				}
+        h1 {
+		  font: 36px 'Roboto Slab';
+          color: black;
+        }
 
-				a {
-					color: black;
-					font: 20px/2 Helvetica; margin: 40px;
-					text-decoration: none;
-				}
+        h2 {
+		  font: 34px 'Roboto Slab';
+          color: black;
+        }
 
-				a:hover {
-					color: black;
-					font: 24px Helvetica; margin: 40px;
-					text-decoration: none;
-				}
+        h3 {
+		  font: 28px 'Roboto Slab';
+          color: black;
+        }
 
-				a:visited {
-					color: purple;
-					font: 20px/2 Helvetica; margin: 40px;
-					text-decoration: none;
-				}
+        p {
+		  font: 28px 'Roboto Slab';
+          color: black;
+        }
 
-				p {
-					font: 20px/2 Helvetica; margin: 0 0 30px 0; text-indent: 0px;
-				}
+        ul {
+          list-style: round outside none;
+ 		  font: 28px/2 'Roboto Slab';
+          color: black;
+          padding-left: 80px;
+        }
 
-				ul {
- 		  		 list-style: round outside none; font: 20px/2 Helvetica;
-				}
+        a {
+ 		  font: 24px 'Roboto Slab';
+          color: black;
+          padding-left: 40px;
+	      text-decoration: none;
+        }
 
-				#cssmenu {
-					-moz-box-shadow: 0 0 1px black; -webkit-box-shadow: 0 0 1px black; box-shadow: 0 0 0px black;
-					list-style: none;
-					margin: 0;
-					padding: 0;
-					width: 6em;
-					position: absolute;
-					top: 80px;
-					left: 10px;
-				}
+        a:visited {
+ 		  font: 24px 'Roboto Slab';
+          color: grey;
+          padding-left: 40px;
+          text-decoration: none;
+        }
 
-				#cssmenu a {
-					border-bottom: 0px solid #393939;
-					color: #ccc;
-					display: block;
-					margin: 0;
-					padding: 4px 4px;
-					text-decoration: none;
-					font: 20px Helvetica;
-					color: #333;
-					font-weight: bold;
-				}
+		img {
+    		max-width: 100%;
+		    height: auto;
+		/*    width: auto\9;        for IE8 */ 
+		}
 
-				#cssmenu a:hover {
-  				background: #2580b2;   	<!-- was 2580a2 -->
-					color: #fff;
-					padding-bottom: 4px;
-				}
+        #cssmenu {
+          position: absolute;
+          top: 60px; left: 10px;
+          width: 6em; height: 6em;
+          margin: 0; padding: 0;
+          -webkit-box-shadow: 0 0 00px black;
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+          list-style: none;       
+        }
 
-				#social-links {
-					position: relative;
-					left: 5px; top: 20px;
-					padding: 10px;
-					background: none;
-					-moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 00px black;
-				}
-			</style>
+        #cssmenu a {
+          border-bottom: 0px solid #393939;
+          color: #ccc;
+          display: block;
+          margin: 0;
+          padding: 4px 4px;
+          text-decoration: none;
+          font: 20px Helvetica;
+          color: #333;
+          font-weight: bold;
+        }
+
+        #cssmenu a:hover {
+          background: #2580b2;    <!-- was 2580a2 -->
+          color: #fff;
+          padding-bottom: 4px;
+        }
+
+        #social-links {
+          position: relative;
+          left: 5px; top: 20px;
+          padding: 10px;
+          background: none;
+          -webkit-box-shadow: 0 0 00px black;          
+          -moz-box-shadow: 0 0 00px black;
+          box-shadow: 0 0 00px black;
+        }
+      </style>
   </head>
   <body>
-		<div id="lej-heading">
+		<div id="heading">
 		Lars Johnson
 		</div>
 		<div id="cssmenu">
-			<a href="../index2.html">Home</a>
-			<a href="../about2.html">About</a>
+		<a href="../index2.html">Home</a>
+		<a href="../about2.html">About</a>
    		<a href="#">My Blog</a>
    		<a href="#">Projects</a>
    		<a href="#">Resume</a>
@@ -116,15 +142,15 @@
        </div>
      </div>
      <main>
-     		<div id="page-wrap">
-	      	<h2>Most Recent Blog Posts</h2>
-    	  	<p><a href="092115-blog2.html">09/21/15 Headline</a></p>
-	      	<p><a href="091415-blog2.html">09/12/15 Git With The Program</a></p>
-	      	<p><a href="092115-blog2.html">MM/DD/YY Headline</a></p>
-    	  	<p><a href="092115-blog2.html">MM/DD/YY Headline</a></p>
-	      	<p><a href="092115-blog2.html">MM/DD/YY Headline</a></p>
-    	  	<p><a href="092115-blog2.html">MM/DD/YY Headline</a></p>
-	      	<p><a href="092115-blog2.html">MM/DD/YY Headline</a></p>
+     		<div id="light-box">
+	      	<h1>Most Recent Blog Posts</h1>
+    	  	<p><a href="092115-blog2.html">09/21/15 HTML5 and CSS3</a></p>
+	      	<p><a href="091415-blog2.html">09/14/15 Version Control</a></p>
+	      	<p><a href="#">09/28/15 Headline</a></p>
+    	  	<p><a href="##">10/05/15 Headline</a></p>
+	      	<p><a href="###">10/12/15 Headline</a></p>
+    	  	<p><a href="####">10/19/15 Headline</a></p>
+	      	<p><a href="#####">10/26/15 Headline</a></p>
         </div>
 		</main>
   </body>
