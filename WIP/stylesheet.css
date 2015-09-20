@@ -22,7 +22,7 @@ body {
 
 #heading {
 	position: absolute;
-	top: px; left: 130px; padding-top: 40px; padding-bottom: 10px;
+	top: -10px; left: 130px; padding-top: 40px;
 	font: 48px 'Roboto Slab';
 	font-weight: 700;
 	color: #007935;
@@ -33,7 +33,7 @@ h1 {
 	font: 36px/1 'Roboto Slab';
 	color: black; font-weight: 700;
 	}
-	
+
 h2 {
 	font: 34px/.5 'Roboto Slab';
 	color: black; font-weight: 700;
