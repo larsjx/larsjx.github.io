@@ -1,3 +1,5 @@
+/* ---------------------------------------- GENERAL BITS */
+
 html {
 background-image:url(../imgs/apostles.png);
 background-repeat:no-repeat;
@@ -6,6 +8,10 @@ background-attachment:fixed;
 -webkit-background-size:cover;
 -moz-background-size:cover;
 background-size:cover
+}
+
+.hdln {
+margin-left: 2.4em;
 }
 
 .xxl {
@@ -29,7 +35,7 @@ padding: 0em 0em .5em;
 }
 
 .std span {
-	font-weight:700;
+  font-weight:700;
 }
 
 .std {
@@ -45,10 +51,7 @@ margin-bottom:.5em;
 margin-left: 2em;
 }
 
-.hdln {
-position: relative;
-margin-left: 1.5em;
-}
+/* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
 
 .menu {
 position: fixed;
@@ -60,11 +63,13 @@ height:1em;
 
 .lt-box {
 position: relative;
+/*top: 12em;*/
+/*position: fixed;*/
 margin-left: 10em;
 width: 50%;
 padding:0% 2% 2% 2%;
 border-radius:20px;
-/*overflow:scroll;*/
+overflow:scroll;
 background:hsla(100,100%,100%,0.25);
 -webkit-box-shadow:0 0 10px #fff;
 -moz-box-shadow:0 0 10px #fff;
@@ -81,6 +86,19 @@ width:3.5em;
 height:1em;
 }
 
+/* ---------------------------------------- IMAGE AND LINK BEHAVIOR */
+
+img {
+max-width:100%;
+height:auto;
+border-radius:20px
+}
+
+.lt-box img {
+margin-top:3%;
+border:2px solid #000
+}
+
 a {
 font:1em 'Roboto Slab';
 color:#000;
@@ -92,12 +110,6 @@ a:visited {
 font:1em 'Roboto Slab';
 color:#007935;
 text-decoration:none
-}
-
-img {
-max-width:100%;
-height:auto;
-border-radius:20px
 }
 
 .menu a {
