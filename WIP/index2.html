@@ -3,52 +3,43 @@
   <head>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/>
-    <title>### LEJ-INDEX2 ###</title>
+    <title>### DSKTP-INDEX2 ###</title>
     <style>
-      body {
-        background-image: url(imgs/apostles-only.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-attachment: fixed;
+      html {
+        background: url(imgs/apostles-only.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
       }
-      #light-box {
-        position: absolute;
-        top: 180px; left: 140px;
-        width: 57%; height: 75%;
-        margin: 0; padding-left: 20px; padding-right: 20px;
-        overflow: scroll;
-        background: hsla(100,100%,100%,0.00);
-        -webkit-box-shadow: 0 0 00px white;
-        -moz-box-shadow: 0 0 00px white;
-        box-shadow: 0 0 00px white;
-        }
+      .lt-box img {
+        margin-top: 3%;
+      	border: 2px solid black;
+      }
     </style>
   </head>
   <body>
-    <div id="heading">Lars Johnson</div>
-    <div id="menu">
+    <header class="hdln xxl">
+      Lars Johnson
+    </header>
+    <nav class="menu">
       <a href="#">Home</a>
       <a href="about2.html">About</a>
       <a href="blog/blog-index2.html">My Blog</a>
       <a href="projects/proj-index2.html">Projects</a>
       <a href="#">Resume</a>
-      <div id="social-links">
+  </nav>
+      <main class="lt-box">
+  	  	<img src="imgs/lej-04.png" alt="Photo of Lars">
+      	<div class="xlg">Thanks for stopping by</div>
+      	<div class="std">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum.</div>
+      </main>
+      <footer class="social">
         <a href="https://twitter.com/larsjx"><img src="imgs/twitter.png" alt="Twitter"></a>
         <a href="https://www.facebook.com/larsjx"><img src="imgs/fb.png" alt="Facebook"></a>
         <a href="https://www.linkedin.com/in/larsjx"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
         <a href="https://github.com/larsjx"><img src="imgs/github.png" alt="GitHub"></a>
         <a href="#"><img src="imgs/email.png" alt="Email Me"></a>
-      </div>
-    </div>
-   <main>
-    <div id="light-box">
-      <p><img src="imgs/lej-04.png" alt="Photo of Lars"></p>
-      <h1>Thanks for stopping by</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum.</p>
-    </div>
-   </main>
+    </footer>
   </body>
 </html>
