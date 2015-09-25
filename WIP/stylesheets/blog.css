@@ -1,120 +1,135 @@
-body {
-	background-image: url(../imgs/apostles.png);
-	background-repeat: no-repeat;
-	background-position: left;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-    }
+html {
+background-image:url(../imgs/apostles.png);
+background-repeat:no-repeat;
+background-position:left;
+background-attachment:fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+background-size:cover
+}
 
-#light-box {
-	position: absolute;
-	top: 180px; left: 140px;
-	width: 57%; height: 75%;
-	margin: 0; padding-left: 20px; padding-right: 20px;
-	overflow: scroll;
-	background: hsla(100,100%,100%,0.25);
-	-webkit-box-shadow: 0 0 10px white;
-	-moz-box-shadow: 0 0 10px white;
-	box-shadow: 0 0 10px white;
-	}
+.xxl {
+font:7vw 'Roboto Slab';  /* or 6em */
+color:#007935;
+font-weight:700
+}
 
-#heading {
-	position: absolute;
-	top: -10px; left: 130px; padding-top: 40px;
-	font: 48px 'Roboto Slab';
-	font-weight: 700;
-	color: #007935;
-	font-size: 6vw;
-	}
+.xlg {
+font:2.35em 'Roboto Slab';
+color: black;
+font-weight:700;
+line-height: 1em;
+padding: .55em 00em;
+}
 
-h1 {
-	font: 36px/1 'Roboto Slab';
-	color: black; font-weight: 700;
-	}
+.lg {
+font:2em 'Roboto Slab';
+font-weight:700;
+padding: 0em 0em .5em;
+}
 
-h2 {
-	font: 34px/.5 'Roboto Slab';
-	color: black; font-weight: 700;
-	}
+.std span {
+	font-weight:700;
+}
 
-h3 {
-	font:32px 'Roboto Slab';
-	color: black; font-weight: 700;
-	}
+.std {
+font:1.8em 'Roboto Slab';
+color:#000;
+font-weight:500;
+padding-bottom: .5em;
+}
 
-h4 {
-	font:28px 'Roboto Slab';
-	color: black; font-weight: 700;
-	}
+.list {
+margin-top: .20em;
+margin-bottom:.5em;
+margin-left: 2em;
+}
 
-p {
-	font: 28px 'Roboto Slab';
-	color: black; font-weight: 300;
-	}
+.hdln {
+position: relative;
+margin-left: 1.5em;
+}
 
-ul {
-	list-style: round outside none;
-	font: 28px 'Roboto Slab';
-	color: black;
-	padding-left: 80px;
-	}
+.menu {
+position: fixed;
+top: 5em;
+margin-left:2em;
+width:5.5em;
+height:1em;
+}
+
+.lt-box {
+position: relative;
+margin-left: 10em;
+width: 50%;
+padding:0% 2% 2% 2%;
+border-radius:20px;
+/*overflow:scroll;*/
+background:hsla(100,100%,100%,0.25);
+-webkit-box-shadow:0 0 10px #fff;
+-moz-box-shadow:0 0 10px #fff;
+box-shadow:0 0 10px #fff
+}
+
+.social {
+position: fixed;
+/*float: left;*/
+/*margin-top: -20%;*/
+top: 15em;
+margin-left: 2.75em;
+width:3.5em;
+height:1em;
+}
 
 a {
-	font: 24px 'Roboto Slab';
-	color: black;
-	padding-left: 40px;
-	text-decoration: none;
-	}
+font:1em 'Roboto Slab';
+color:#000;
+line-height:2em;
+text-decoration:none
+}
 
 a:visited {
-	font: 24px 'Roboto Slab';
-	color: gray;
-	padding-left: 40px;
-	text-decoration: none;
-    }
+font:1em 'Roboto Slab';
+color:#007935;
+text-decoration:none
+}
 
 img {
-	max-width: 100%;
-	height: auto;
-	}
+max-width:100%;
+height:auto;
+border-radius:20px
+}
 
-#menu {
-	position: absolute;
-	top: 60px; left: 10px;
-	width: 6em; height: 6em;
-	margin: 0; padding: 0;
-	-webkit-box-shadow: 0 0 00px black;
-	-moz-box-shadow: 0 0 00px black;
-	box-shadow: 0 0 00px black;
-	list-style: none;
-	}
+.menu a {
+border-bottom:0 solid #393939;
+color:#ccc;
+display:block;
+margin:0;
+padding:4px;
+text-decoration:none;
+font:1.25em Helvetica;
+color:#000;
+font-weight:700
+}
 
-#menu a {
-	border-bottom: 0px solid #393939;
-	color: #ccc;
-	display: block;
-	margin: 0;
-	padding: 4px 4px;
-	text-decoration: none;
-	font: 20px Helvetica;
-	color: #333;
-	font-weight: bold;
-	}
+.menu a:hover {
+background:#2580b2;
+color:#fff;
+padding-bottom:4px
+}
 
-#menu a:hover {
-	background: #2580b2;    //* 2580a2 is also good *//
-	color: #fff;
-	padding-bottom: 4px;
-	}
+.social a {
+color:#ccc;
+display:block;
+padding:4px;
+text-decoration:none;
+font:1.25em Helvetica;
+color:#000;
+font-weight:700
+}
 
-#social-links {
-	position: relative;
-	left: 5px; top: 20px;
-	padding: 10px;
-	background: none;
-	-webkit-box-shadow: 0 0 00px black;
-	-moz-box-shadow: 0 0 00px black;
-	box-shadow: 0 0 00px black;
-	}
+.social a:hover {
+background:#2580b2;
+color:#fff;
+padding-bottom:4px
+}
