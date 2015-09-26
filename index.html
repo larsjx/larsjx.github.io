@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lars Johnson's Website</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/first-bkgd.css"/>
+    <meta charset="utf-8"/>
+    <title>Lars Johnson - Chicago, IL</title>
   </head>
-  <!--
-  Find a scalable way of using this background image when
-  CSS gets introduced. The following does not scale:
-  <body style="background-image:url(imgs/apostles.png);">
-  -->
   <body>
-      <section>
-        <p><a href="index.html">About</a></p>
-        <p><a href="blog/index.html">My Blog</a></p>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Resume</a></p>
-      </section>
-      <header>
-        <h1>Lars Johnson</h1>
-      </header>
-      <main>
-        <p>
-          I began my career as a sales person for an enterprise messaging startup in St. Paul Minnesota. Since then, I have been in Chicago where I helped launch, sell and deliver a number of IBM's Internet services. In 17 years at IBM, my primary roles were in: complex solution design and delivery, technical sales management, and project management. I also created global client satisfaction programs for 2 different divisions before becoming an internal strategy consultant and project manager with IBM Global Sales Operations.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum. Pellentesque porttitor risus mi, et accumsan nisl consequat nec. Cras consequat ut tellus consectetur euismod. Aliquam condimentum tristique justo. Morbi vel odio vitae ex interdum pulvinar. Nam bibendum fermentum ipsum, at rutrum arcu scelerisque a.
-        </p>
-      </main>
-      <section>
-        <!-- This section and image will be removed in the next release -->
-        <img src="imgs/lej-04.png" alt="Picture of Lars">
-      </section>
-      <section>
+    <header>
+      <div class="hdln xxl">
+        Lars Johnson
+      </div>
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog/blog-index.html">My Blog</a>
+        <a href="projects/proj-index.html">Projects</a>
+        <a href="#">Resume</a>
+      </nav>
+      <nav class="social">
         <a href="https://twitter.com/larsjx"><img src="imgs/twitter.png" alt="Twitter"></a>
         <a href="https://www.facebook.com/larsjx"><img src="imgs/fb.png" alt="Facebook"></a>
         <a href="https://www.linkedin.com/in/larsjx"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
         <a href="https://github.com/larsjx"><img src="imgs/github.png" alt="GitHub"></a>
-        <img src="imgs/email.png" alt="Email Me">
-      </section>
-      <footer>
-        <p>
-          <strong>NEXT UP:</strong> Replace temp image with large <a href="imgs/apostles.png">background image</a>. Move menu items into a vertical navigation element on the upper left with my name (headline) on the menu's right. My brief bio will move into to a large box just below my name - <a href="imgs/wireframe-index.png">See wireframe</a>.
-        </p>
-      </footer>
+        <a href="#"><img src="imgs/email.png" alt="Email Me"></a>
+      </nav>
+    </header>
+    <main class="lt-box">
+      <img src="imgs/lej-04.png" alt="Photo of Lars">
+      <div class="xlg">Thanks for stopping by</div>
+      <div class="std">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et magna sed mauris varius convallis vitae nec odio. Duis eget erat rutrum, dictum mauris rutrum, finibus diam. Aliquam at tortor et elit sagittis pulvinar. In id molestie quam, nec interdum nibh. Etiam rutrum, purus eu vulputate elementum, justo lectus lacinia dolor, nec vestibulum ligula libero porta ipsum.</div>
+    </main>
+    <footer>
+      <!-- Something interesting may go here -->
+    </footer>
   </body>
 </html>
