@@ -2,7 +2,7 @@
 
 ## Link to my website:
 
-    [larsjx.github.io](http://larsjx.github.io/)
+[http://larsjx.github.io/](http://larsjx.github.io/)
 
 
 ## What did you learn about CSS padding, borders, and margin by doing this challenge?
