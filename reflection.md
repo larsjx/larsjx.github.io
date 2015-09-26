@@ -12,7 +12,7 @@ I learned that elements can interact with each other and/or overlap when you do 
 
 ## What did you learn about CSS positioning?
 
-I learned to leverage float, and relative values (vw, em and percentages) whenever possible versus any kind of specific positioning with pixels. I also realized that the next time I attempt to do this, I will definitely want to start with a working grid, multiple size background images, and multiple @media queries for more refined placement and alignment at different resolutions. Right now, I'm able to position and move elements around with experimentation, and I am looking forward to getting to a point where I will know what to do just by looking at the CSS.
+I learned to leverage float, and relative values (vw, em and percentages) whenever possible versus any kind of specific positioning with pixels. I also realized that the next time I attempt to do this, I would definitely like to try starting with a working grid, multiple size background images, and multiple @media queries for more refined placement and alignment at different resolutions. Right now, I'm able to position and move elements around on a static page (or for different resolutions with some experimentation), but I am looking forward to getting to a point where I will just know what to do by looking at the CSS and visualizing the outcome.
 
 
 ## What aspects of your design did you find easiest to implement? What was most difficult?
@@ -24,4 +24,4 @@ It was most difficult to arrange the navigation elements so they flow properly a
 
 ## What did you learn about adding and formatting elements with CSS in this challenge?
 
-In this challenge, I learned to place and format different elements using various combinations of float, display, border, margin and padding. I attempted to keep everything fluid to accommodate different resolutions and device sizes, but found that to be quite difficult without a grid system and multiple @media queries.
+In this challenge, I learned to place and format different elements using various combinations of float, display, border, margin and padding. I attempted to keep everything fluid to accommodate different resolutions and device sizes, but found that to be quite difficult without a grid system and more than one @media query.
