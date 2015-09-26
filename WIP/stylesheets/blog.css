@@ -1,5 +1,9 @@
 /* ---------------------------------------- GENERAL BITS */
 
+/** {
+  border:1px solid red;
+}*/
+
 html {
 background-image:url(../imgs/apostles.png);
 background-repeat:no-repeat;
@@ -10,19 +14,23 @@ background-attachment:fixed;
 background-size:cover;
 }
 
+main {
+  padding-bottom:10%;
+}
+
 .hdln {
-margin-left: 2.4em;
+margin-left: 18%;
 }
 
 .xxl {
-font:7vw 'Roboto Slab';  /* or 6em */
+font:7vw 'Roboto Slab';
 font-weight:700;
 color:#007935;
 }
 
 .xlg {
 font:2.35em 'Roboto Slab';
-padding: .55em 00em;
+padding: 1% 0%;
 font-weight:700;
 line-height: 1em;
 color:#000;
@@ -47,39 +55,35 @@ font-weight:500;
 color:#000;
 }
 
-/*.list {
-margin-left: 2em;
-}*/
-
 /* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
 
 .menu {
-position: fixed;
-top: 5em;
-margin-left:2em;
-height:1em;
+margin-left:1%;
 width:5.5em;
+float:left;
+margin-top: -4%;
+margin-bottom: 2%;
 }
 
 .lt-box {
-position: relative;
-margin-left: 10em;
 width: 50%;
-padding:0% 2% 2% 2%;
+padding:1% 2% 2% 2%;
 border-radius:20px;
 background:hsla(100,100%,100%,0.25);
 -webkit-box-shadow:0 0 10px #fff;
 -moz-box-shadow:0 0 10px #fff;
 box-shadow:0 0 10px #fff;
-overflow:scroll;
+/*overflow:scroll;*/
+/*float:right;*/
+margin-left: 18%;
+margin-right: 30%;
 }
 
 .social {
-position: fixed;
-top: 15em;
-margin-left: 2.75em;
-height:1em;
-/*width:3.5em;*/
+clear: left;
+margin-left: 1.8%;
+width:3.5em;
+float: left;
 }
 
 /* ---------------------------------------- IMAGE AND LINK BEHAVIOR */
@@ -91,7 +95,7 @@ border-radius:20px;
 }
 
 .lt-box img {
-margin-top:3%;
+margin-bottom: 2%;
 border:2px solid #000;
 }
 
@@ -110,7 +114,6 @@ color:#000;
 
 .menu a {
 display:block;
-margin:0;
 padding:4px;
 font:1.25em Helvetica;
 text-decoration:none;
@@ -134,33 +137,22 @@ background:#2580b2;
 padding-bottom:4px;
 }
 
-/* ---------------------------------------- NAV BAR SWITCH FOR MOBILE */
-
-@media (max-width: 1000px) {
-  .xxl {
-    color:#007935;
-  }
-
-.hdln {
-margin-left: 3em;
-}
+/* ---------------------------------------- COMPONENT SWITCH FOR MOBILE */
+@media (max-width: 950px) {
 
 .menu {
-position: static;
-margin-left:19%;
-margin-top: 2em;
-width: 120%;
+margin-left:18%;
+margin-bottom:2%;
+margin-top:2%;
+width:80%;
 }
 
 .menu a {
-display: inline;
-border:2px solid #007935;
-border-radius: 25%;
-margin:0;
-padding:10px;
+display:inline-block;
+padding:4px;
 font:1.25em Helvetica;
 text-decoration:none;
-font-weight:700;
+font-weight:500;
 color:#000;
 }
 
@@ -171,36 +163,34 @@ color:#fff;
 }
 
 .social {
-position: static;
-margin-left: 26.5%;
-margin-top: 2.5em;
-/*height:5em;*/
-/*width:3.5em*/;
-width:50%;
+clear: left;
+margin-left: 18%;
+width:80%;
 }
 
 .social a {
-display:inline;
-/*padding:4px;*/
+display:inline-block;
+padding:4px;
+margin-bottom: 2%;
 }
 
 .social a:hover {
 background:#2580b2;
-/*padding-bottom:4px;*/
+padding-bottom:4px;
 }
 
 .lt-box {
-position: absolute;
-margin-left: 10em;
-margin-top: 9em;
-width: 90%;
-padding:0% 2% 2% 2%;
+float:none;
+clear: both;
+width: 50%;
+padding:1% 2% 2% 2%;
 border-radius:20px;
-overflow:scroll;
 background:hsla(100,100%,100%,0.25);
 -webkit-box-shadow:0 0 10px #fff;
 -moz-box-shadow:0 0 10px #fff;
 box-shadow:0 0 10px #fff;
+/*overflow:scroll; */
+margin-left: 18%;
 }
 
 }
