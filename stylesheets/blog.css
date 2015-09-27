@@ -15,6 +15,16 @@ text-decoration:none;
 padding:.15em .35em
 }
 
-.return a:hover {
+ span.return a:hover {
 color:#000
+}
+
+.list a span {
+font-weight:700;
+color:#007935
+}
+
+.list a:visited span {
+font-weight:700;
+color:#007935
 }

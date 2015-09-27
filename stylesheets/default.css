@@ -55,6 +55,11 @@ font-weight:500;
 color:#000
 }
 
+.list {
+  margin-top:2%;
+  margin-left:4%;
+}
+
 /* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
 
 .menu {
@@ -82,6 +87,10 @@ clear:left;
 margin-left:1.8%;
 width:3.5em;
 float:left
+}
+
+.social img {
+border-radius:10px
 }
 
 /* ---------------------------------------- IMAGE AND LINK BEHAVIOR */
