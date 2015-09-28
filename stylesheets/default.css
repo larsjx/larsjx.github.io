@@ -55,9 +55,15 @@ font-weight:500;
 color:#000
 }
 
-.list {
-  margin-top:2%;
-  margin-left:4%;
+.no-blt {
+margin-left:-2%
+}
+
+.no-blt ul {
+margin-top: 17px;
+margin-left:1%;
+margin-bottom:0%;
+list-style: none
 }
 
 /* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
@@ -106,7 +112,7 @@ margin-bottom:2%;
 border:2px solid #000
 }
 
-.list a {
+.no-blt a {
 font:1em 'Roboto Slab';
 text-decoration:none;
 font-weight:500;
@@ -114,9 +120,17 @@ line-height:2em;
 color:#007935
 }
 
-.list a:visited {
+.no-blt a:visited {
 font-weight:700;
 color:#000
+}
+
+.u-ln a {
+text-decoration: underline
+}
+
+.u-ln a:visited {
+text-decoration: underline
 }
 
 .menu a {
