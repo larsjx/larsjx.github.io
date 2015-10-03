@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+    <meta charset="utf-8"/>
+    <title>Lars Johnson - Blog Post 10/05/15</title>
+  </head>
+  <body>
+    <header>
+      <div class="hdln xxl">
+        Lars Johnson
+      </div>
+      <nav class="menu">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="blog-index.html">My Blog</a>
+        <a href="../projects/proj-index.html">Projects</a>
+        <a href="#">Resume</a>
+      </nav>
+      <nav class="social">
+        <a href="https://twitter.com/larsjx"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/larsjx"><img src="../imgs/fb.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/larsjx"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/larsjx"><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href="#"><img src="../imgs/email.png" alt="Email Me"></a>
+      </nav>
+    </header>
+    <main>
+      <div class="lt-box">
+        <div class="xlg">Arrays and Hashes</div>
+        <div class="lg">October 5, 2015 -- Let's contain this </div>
+        <div class="std"><span>Overview</span></div>
+        <div class="std">This week we learned about storing, retrieving and acting on different sets of objects within our programs. Specifically, we learned about arrays and hashes. We learned what they are, when to use them, and why we use them. Let’s start with what they are.</div>
+        <div class="std"><span>Arrays and indexes</span></div>
+        <div class="std">At their most basic level, an array is a container that holds different objects (or sets of objects) so you can easily get to and use them or change them whenever you need to. However, you don’t just toss things randomly into an array and hope that you will be able to find whatever you’re looking for when you need it later.</div>
+        <div class="std">When you put something in an array, each object is stored in a uniquely numbered position. That way as long as you have the correct number (index), it’s very easy to access, or even change, any object in any position. But what if you don’t know the numbered index of the information you need, or you want to interact with more than one object at once?</div>
+        <div class="std">It’s possible to look through an entire array or any subset of an array by telling the computer to look at a particular range of numbered positions. That’s called “iterating over an array” and as you can imagine it’s a very handy option to have.</div>
+        <div class="std">Another great feature of arrays is that each index can hold almost any kind of object. They can be numeric, alphabetic, statements of true or false (Boolean values), hashes, and even other arrays (among other things). The last one is where things get really interesting because it’s possible to represent more than one dimension of values within an array.</div>
+        <div class="std">In summary, arrays are linear sets, and they are great for storing lists where the order of things is important. They can also be accessed randomly or in sequence (front to back or back to front) starting and ending at any points within their index.</div>
+        <div class="std"><span>Hashes and hashmaps</span></div>
+        <div class="std">Hashes are another type of container, but instead of using a numbered index, hashes let you use practically anything as their index. In other words, hashes can map one object (called the key) to another object (called the value). These key/value pairs can then be used to logically relate two different sets of data, also called a hashmap.</div>
+        <div class="std">Hashmaps are powerful because unlike an array, you no longer need to remember an arbitrary index in order to retrieve the object that you are looking for. Hashes are all about the relationship between two items and all you need to know is the contents of a key to unlock its associated value.</div>
+        <div class="std">Of course, and this is not a bad thing, all hash keys must be unique within a given hashmap. That means the same object can be listed more than once (as a value for multiple keys), but each value will require its own unique key to be unlocked.</div>
+        <div class="std">For example, if you imagine all the cars within a theater’s valet service as a hashmap, each car can only belong to one claim check holder. The service can handle more than one 2015 Toyota Prius (value), but each claim check (key) will only provide access to a specific car (value).</div>
+        <div class="std">That’s not a perfect example, but it works for demonstrating that hashes and hashmaps are really useful when:</div>
+        <div class="std list">
+          <ul>
+            <li>We want to associate something (cars/values) with a specific identifier (claim checks/keys)</li>
+            <li>We plan on adding and removing elements from the set (cars and claim checks)</li>
+            <li>We don’t really care about the order in which things are stored.</li>
+            <li>Speed of lookup is really important. Hash tables are generally faster than arrays</li>
+          </ul>
+        </div>
+        <div class="std"><span>Some Ruby code for your consideration</span></div>
+        <div class="std"><span>Array example</span></div>
+        <div class="std">The following are 2 simple arrays. The first is a list of strings and the second is list of different object types. We iterate over each array so you can see their contents in the red box on the right. Please note the second example contains a string, a float (number with a decimal point), an integer represented as a string, and a separate array containing 3 integers:</div>
+        <img src="../imgs/array-examples.png" alt="array examples">
+        <div class="std"><span>Hash example</span></div>
+        <div class="std">And here's an example of a hash that you can cut and paste to play around with:</div>
+        <pre><code class="bld">
+        pet_names = { :cat => "Star",
+                      :dog => "Ginger",
+                      :lion => "Haskell",
+                      :fish => "Float"
+        }
+
+        puts pet_names[:lion]
+        </code></pre>
+        <div class="std">In conclusion, both hashes and arrays are of great value to programmers. They enable us to access and re-use multiple objects with ease and context. In the case of arrays, that context is the index and the sequence of data contained within. While in the case of hashes, that context is the relationship between key/value pairs.</div>
+        <div class="std">
+        <!-- Include additional headlines and sections as necessary -->
+        </div>
+      </div>
+      <div class="return">
+      <a href="blog-index.html">Return to Blog Index</a>
+      </div>
+    </main>
+    <footer>
+      <!-- Something interesting may go here -->
+    </footer>
+  </body>
+</html>
