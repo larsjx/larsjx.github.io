@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/first-bkgd.css"/>
+    <meta charset="utf-8"/>
+    <title>Lars Johnson - Chicago, IL</title>
+  </head>
+  <body>
+    <header>
+      <div class="hdln xxl">
+        Lars Johnson
+      </div>
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog/blog-index.html">My Blog</a>
+        <a href="projects/proj-index.html">Projects</a>
+        <a href="#">Resume</a>
+      </nav>
+      <nav class="social">
+        <a href="https://twitter.com/larsjx"><img src="imgs/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/larsjx"><img src="imgs/fb.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/larsjx"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/larsjx"><img src="imgs/github.png" alt="GitHub"></a>
+        <a href="#"><img src="imgs/email.png" alt="Email Me"></a>
+      </nav>
+    </header>
+    <main class="lt-box">
+      <div id="contact-form" class="clearfix">
+      <h1>Send me a note</h1>
+      <h2>I hope you don't think it's impolite to provide this form instead of my email address. I am only doing so to avoid getting spam.</h2>
+      <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+      </ul>
+      <p id="success">Thank you for sending your note. I will get back to you as soon!</p>
+      <form method="post" action="sendmsg.html">         <!-- change sendmsg.html to sendmsg.php when php is working -->
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="Jane Doe" required="required" autofocus="autofocus" />
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="janedoe@email.com" required="required" />
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Enter your message for me here." required="required" data-minlength="20"></textarea>
+        <span id="loading"></span>
+        <input type="submit" value="Send" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+      </form>
+</div>
+    </main>
+    <footer>
+      <!-- Something interesting may go here -->
+    </footer>
+  </body>
+</html>
