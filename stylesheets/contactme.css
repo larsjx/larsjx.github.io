@@ -1,7 +1,8 @@
+/*   NOTE: CSS and HTML for this contact form are loosely based on a tutorial by tutsplus.
+     Both the CSS & HTML have been significantly changed to make this an original effort.
+     http://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426
+*/
 
-.std {
-color: #007935
-}
 
 .lt-box {
 background:hsla(100,100%,100%,0);
@@ -19,36 +20,33 @@ border: 6px solid #007935;
 background-color:#F2F7F9;
 -webkit-box-shadow:0 0 10px #fff;
 -moz-box-shadow:0 0 10px #fff;
-box-shadow:0 0 10px black;
+box-shadow:0 0 10px black
 }
 
 .contact-form input,
-.contact-form select,
 .contact-form textarea,
 .contact-form label {
 font-size:15px;
-margin-bottom:2px;
+margin-bottom:2px
 }
 
 .contact-form input,
-.contact-form select,
 .contact-form textarea {
 width:50%;
 border: 1px solid #CEE1E8;
 margin-bottom:20px;
-padding:4px;
+padding:4px
 }
 
 .contact-form input:focus,
-.contact-form select:focus,
 .contact-form textarea:focus {
 border: 1px solid #AFCDD8;
-background-color: #EBF2F4;
+background-color: #EBF2F4
 }
 
 .contact-form textarea {
 height:150px;
-resize: none;
+resize: none
 }
 
 .contact-form label {
@@ -59,29 +57,21 @@ font-weight:500;
 color:#000
 }
 
-
 .contact-form #submit-button {
-width: 100px;
+width:100px;
 background-color:#333;
 color:#FFF;
-border:none;
 display:block;
-margin-bottom:0px;
-margin-right:6px;
 background-color:#007935;
-border-radius:20px;
+border-radius:20px
 }
 
 .contact-form #submit-button:hover {
-background-color: #2580b2   ;
+background-color: #2580b2
 }
 
 .contact-form #submit-button:active {
 position:relative;
-top:1px;
+top:1px
 }
 
-
-/* The CSS and HTML for this contact form are based on the one by tutsplus described here:
->>>> http://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426
-*/
