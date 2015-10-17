@@ -3,16 +3,17 @@
 }
 
 .return {
-margin-left:22%;
+margin-left:25%;
 margin-top:4%
 }
 
 .return a {
+border-radius: 10px;
 font:1.4vw 'Roboto Slab';
 background:#2580b2;
 color:#fff;
 text-decoration:none;
-padding:.15em .35em
+padding: .2em .35em .2em .35em;
 }
 
  span.return a:hover {
