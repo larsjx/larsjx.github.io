@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
     <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
-    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../stylesheets/snippets.min.css">
+    <script src="../javascript/snippet-highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Lars Johnson - Blog Post 10/05/15</title>
   </head>
   <body>
@@ -59,7 +62,8 @@
         <img src="../imgs/array-examples.png" alt="array examples">
         <div class="std"><span>Hash example</span></div>
         <div class="std">And here's an example of a hash that you can cut and paste to play around with:</div>
-        <pre><code class="bld">
+        <code><pre>
+
         pet_names = { :cat => "Star",
                       :dog => "Ginger",
                       :lion => "Haskell",
