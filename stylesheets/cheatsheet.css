@@ -8,6 +8,12 @@ html {
 background-image:url(../imgs/apostles-only.png);
 }
 
+.flt-rt {
+float:right;
+margin-top: -2em;
+margin-left: 1em
+}
+
 .xlg {
 font:2.35em 'Roboto Slab';
 padding:1% 0;
@@ -29,27 +35,43 @@ font-weight:500;
 color:#000
 }
 
-.ind {
-margin-left:1em
-}
-
-.bld {
-font-weight:bold
+.code {
+font:1.8em Consolas;
+/*padding-bottom: .5em;*/
 }
 
 .grn {
 color:#007935
 }
 
+.ind {
+margin-left:1em
+}
+
+.bld {
+font-weight:700
+}
+
 .btm {
-padding-bottom:.75em
+padding-bottom:1em
+}
+
+.foot {
+margin-top:.5em;
+margin-bottom: -.2em
 }
 
 /* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
 
 .lt-box {
 width:55%;
-background:hsla(100,100%,100%,10);
+background:hsla(100,100%,100%, .80);
+}
+
+.lt-box img {
+border:none;
+max-width:225px;
+max-height:225px
 }
 
 /* ---------------------------------------- IMAGE AND LINK BEHAVIOR */
