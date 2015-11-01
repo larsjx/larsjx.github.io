@@ -2,6 +2,22 @@
   margin-bottom: 2%;
 }
 
+.std span {
+font-weight:700;
+color:#000
+}
+
+.std {
+font:1.5em 'Roboto Slab';
+padding-bottom:.5em;
+font-weight:500;
+color:#000
+}
+
+.bld {
+font-weight: bold
+}
+
 .return {
 margin-left:25%;
 margin-top:4%
@@ -28,4 +44,8 @@ color:#007935
 .list a:visited span {
 font-weight:700;
 color:#007935
+}
+
+.lt-box {
+background:hsla(100,100%,100%,0.50);
 }
