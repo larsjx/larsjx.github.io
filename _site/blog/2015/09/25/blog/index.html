@@ -227,6 +227,14 @@
                 <div class="col-sm-8 blog">
                 
                 
+                <div class="post columns">
+                <ul>
+                <li><h4><a href="#portfolioModal10011" class="portfolio-link" data-toggle="modal">Website Overhaul</a></h4></li>
+                </ul>
+                </div>
+                
+                
+                
                 
                 
                 
@@ -384,14 +392,6 @@
                 </div>
                 
                 
-                
-                <div class="post columns">
-                <ul>
-                <li><h4><a href="#portfolioModal9999" class="portfolio-link" data-toggle="modal">Example Blog Post</a></h4></li>
-                </ul>
-                </div>
-                
-                
                 </div>
                 </div>
 </div>
@@ -406,6 +406,8 @@
                 </div>
             </div>
             <div class="row">
+            
+            
             
             
                 <div class="col-sm-4 projects">
@@ -463,8 +465,6 @@
                         <p class="text-muted"></p>
                     </div>
                 </div>
-            
-            
             
             
             
@@ -676,6 +676,95 @@
         </div>
     </footer>
      
+    <div class="modal" id="portfolioModal10011">
+    <div>
+        <div class="modal-content new-page">
+            <div class="modal-header">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="../index.html">Lars Johnson</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a data-dismiss="modal" class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-dismiss="modal" href="#background">Background</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-dismiss="modal" href="#blog">Blog</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a class="page-scroll" data-dismiss="modal" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-dismiss="modal" href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-dismiss="modal" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Website Overhaul</h2>
+                            <p></p>
+                            **November 09, 2015**
+
+####This week my fellow classmates and I were encouraged to revisit and update our personal websites to make them more professional.
+
+<br>
+
+#####**The Challenge**
+
+The instructions for this challenge gave us the option of leveraging a static web site generator like <a href="http://jekyllrb.com/">Jekyll</a>, and/or a front-end framework like <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://foundation.zurb.com/">Zurb Foundation</a>, or <a href="http://semantic-ui.com/">Semantic-UI</a>. We only had a few days to make these changes so there wasn’t much time to evaluate the options.
+
+However, after reviewing my <a href="https://larsjx.github.io/lej/">old website</a>, I decided to take the plunge and give it a complete overhaul. While I still really like the old site, its design is not what we call responsive. In other words, it doesn’t scale well from mobile to laptop and up to larger screen sizes. I also felt that starting over with some new tools would teach me a lot.
+
+#####**Jekyll**
+
+After getting some encouraging feedback on Jekyll from my classmates, I started researching it further and learned that:
+
+  * Jekyll powers our web hosting service, GitHub Pages
+  * Page components can be managed independently (e.g., header, footer, etc.)
+  * Content and templates can be written in Markdown, HTML, Textile or Liquid
+  * Jekyll can be used in combination with other frameworks (e.g., Bootstrap)
+
+So I decided to use Jekyll and after experimenting with the basic build, I also elected to start with a <a href="http://jekyllthemes.org/">pre-existing theme</a> because:
+
+  * There wouldn’t be time to build up parity with my old site if I did this from scratch
+  * I am confident that I will be able to customize the theme enough to make it my own
+  * Most themes are responsive and mobile first
+
+I ended up selecting a theme called <a href="http://jekyllthemes.org/themes/agency/">Agency</a> that was purpose-built for a small creative agency instead of an individual like myself. In hindsight, this may not have been a very practical choice, but I have been learning a ton in the process of making Agency fit my needs.
+
+#####**Changes**
+
+Some of the items that I have changed so far include:
+
+  * **Main Sections:** I began by replacing the About, Team, Services, and Portfolio areas with my own sections called Background, Blog, Projects and Resume.
+  * **Blog and Project Sections:** Agency was made to show off a portfolio of website designs and it does not include a blog so I had to create my own indexes and content templates for the Blog and Project sections. This turned out to be much trickier than I anticipated because (a) I’m still learning how to work with modal windows, and (b) I’ve had to modify a minimized Bootstrap.css file and working with it has not been easy.
+  * **Content:** I populated each of these sections with my pre-existing content and converted it all into Markdown for consistency with any new posts going forward.
+  * **Fonts, images, and colors:** I learned about <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> and used it to modify the round icons in the About section. Next I created some other round icons for the Background section by finding images on the web, turning them black and white and modifying them in other ways to fit my needs. I also found some initial images for my Projects and Resume sections.
+  * **Boilerplate text:** There is still a ton of boilerplate (“lorem ipsum”) text that I just haven’t had time to change yet.
+
+#####**Next Steps**
+
+To the extent that we’ll have time to work on our websites in the coming weeks, my next steps include (a) replacing all of the boilerplate text with my own, (b) improving my blog and project post templates (possibly replacing modal windows altogether), (c) updating images, and (d) populating the Resume section.
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <div class="modal" id="portfolioModal20003">
     <div>
         <div class="modal-content new-page">
@@ -1862,56 +1951,6 @@ has been adjusted to align with my growing knowledge of HTML and CSS.</p>
 <h5 id="we-share-and-collaborate-on-github"><strong>We share and collaborate on GitHub</strong></h5>
 
 <p>While git can be run on its own, we also use the valuable Internet service GitHub to share and collaborate on our git repositories. We use GitHub to maintain copies of each repo including all of our snapshots (commits), branches and comments. This is helpful for several reasons. First, by maintaining a remote copy of our repos we are guarding against their potential loss in the event that our own copies fail for any reason. Second, we are making the content of our repos and the branches we develop available for evaluation/comment and collaborative (or derivative) work. Finally, I expect to learn a great deal (and hope to eventually contribute something meaningful) through my participation in the worldwide developer community on GitHub.</p>
-
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="modal" id="portfolioModal9999">
-    <div>
-        <div class="modal-content new-page">
-            <div class="modal-header">
-            <div class="navbar-header page-scroll">
-                <a class="navbar-brand page-scroll" href="../index.html">Lars Johnson</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a data-dismiss="modal" class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-dismiss="modal" href="#background">Background</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-dismiss="modal" href="#blog">Blog</a>
-                    </li>
-                    <li>
-                    <li>
-                        <a class="page-scroll" data-dismiss="modal" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-dismiss="modal" href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-dismiss="modal" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <div class="container">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Example Blog Post</h2>
-                            <p></p>
-                            <h1 id="this-is-an-example-blog-post">This is an example blog post</h1>
-
-<p>And here is a little bit of content.</p>
 
                         </div>
                     </div>

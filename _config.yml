@@ -65,6 +65,6 @@ address:
   - line: Beverly Hills, CA 90210
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 permalink: pretty
 future: true
