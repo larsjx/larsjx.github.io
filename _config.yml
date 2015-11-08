@@ -67,4 +67,5 @@ address:
 # Build settings
 # markdown: kramdown
 # permalink: pretty
+permalink: none
 future: true
