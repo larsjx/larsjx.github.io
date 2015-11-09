@@ -1,17 +1,20 @@
+---
+layout: blogpost
+---
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Example Blog Post</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Lars Johnson's Website">
-    <link rel="canonical" href="https://larsjx.github.io/blog/2015/06/06/blog-copy-5/">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -21,7 +24,7 @@
 
             <div class="modal-header">
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand page-scroll" href="/">Lars Johnson</a>
+                <a class="navbar-brand page-scroll" href="{{site.baseurl}}/">{{site.title}}</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -29,23 +32,23 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#about">About</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#background">Background</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#background">Background</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#blog">Blog</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#blog">Blog</a>
                     </li>
                     <li>
                     <li>
-                        <a class="page-scroll" href="/#projects">Projects</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#resume">Resume</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#resume">Resume</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#contact">Contact</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,12 +56,9 @@
             <div class="container">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Example Blog Post</h2>
-                            <p></p>
-                            <h1 id="this-is-an-example-blog-post">This is an example blog post</h1>
-
-<p>And here is a little bit of content.</p>
-
+                            <h2>{{ page.title }}</h2>
+                            <p>{{ page.description }}</p>
+                            {{ content }}
                         </div>
                     </div>
             </div>

@@ -9,8 +9,10 @@
                 {% if post.categories contains 'blog' %}
                 <div class="post columns">
                 <ul>
-                <li><h4><a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">{{ post.title }}</a></h4></li>
+                <!-- <li><h4><a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">{{ post.title }}</a></h4></li> -->
+                <li><h4><a href="{{ post.url }}" class="title">{{ post.title }}</a></h4></li>
                 </ul>
+
                 </div>
                 {% endif %}
                 {% endfor %}
