@@ -1,0 +1,260 @@
+/* ---------------------------------------- GENERAL BITS */
+
+/** {
+  border:1px solid red;
+}*/
+
+html {
+background-image:url(../imgs/apostles.png);
+background-repeat:no-repeat;
+background-position:left;
+background-attachment:fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+background-size:cover
+}
+
+.hdln {
+margin-left:18%
+}
+
+main {
+padding-bottom:10%
+}
+
+.xxl {
+font:7vw 'Roboto Slab';
+font-weight:700;
+color:#007935
+}
+
+.xlg {
+font:2.35em 'Roboto Slab';
+padding:1% 0;
+font-weight:700;
+line-height:1em;
+color:#000
+}
+
+.lg {
+font:2em 'Roboto Slab';
+padding:0 0 .5em;
+font-weight:700;
+color:#000
+}
+
+.std span {
+font-weight:700;
+color:#000
+}
+
+.std {
+font:1.5em 'Roboto Slab';
+padding-bottom:.5em;
+font-weight:500;
+color:#000
+}
+
+.bld {
+font-weight: bold
+}
+
+.btm {
+padding-bottom:1em
+}
+
+.list {
+margin-left:1%;
+margin-bottom:0%;
+}
+
+.list li {
+padding-top:2%
+}
+
+.no-blt {
+margin-left:-2%
+}
+
+.no-blt ul {
+margin-top: 17px;
+margin-left:1%;
+margin-bottom:0%;
+list-style: none
+}
+
+pre {
+  margin-top:-1%;
+  margin-right:15%;
+  background-color:black
+}
+
+code {
+font-size:1.25em;
+color: white
+}
+
+/* ---------------------------------------- MENU, LIGHTBOX & SOCIAL */
+
+.menu {
+margin-left:1%;
+width:5.5em;
+float:left;
+margin-top:-4%;
+margin-bottom:2%
+}
+
+.lt-box {
+width:42%;
+padding:1% 2% 2%;
+border-radius:20px;
+background:hsla(100,100%,100%,0.25);
+-webkit-box-shadow:0 0 10px #fff;
+-moz-box-shadow:0 0 10px #fff;
+box-shadow:0 0 10px #fff;
+margin-left:18%;
+margin-right:30%
+}
+
+.social {
+clear:left;
+margin-left:1.8%;
+width:3.5em;
+float:left
+}
+
+.social img {
+border-radius:10px
+}
+
+/* ---------------------------------------- IMAGE AND LINK BEHAVIOR */
+
+img {
+max-width:100%;
+height:auto;
+border-radius:20px
+}
+
+.lt-box img {
+margin-bottom:2%;
+border:2px solid #000
+}
+
+.no-blt a {
+font:1em 'Roboto Slab';
+text-decoration:none;
+font-weight:500;
+line-height:2em;
+color:#007935
+}
+
+.no-blt a:visited {
+font-weight:700;
+color:#000
+}
+
+.u-ln a {
+text-decoration: underline
+}
+
+.u-ln a:visited {
+text-decoration: underline
+}
+
+.menu a {
+display:block;
+padding:4px;
+font:1.25em Helvetica;
+text-decoration:none;
+font-weight:700;
+color:#000
+}
+
+.menu a:hover {
+background:#2580b2;
+padding-bottom:4px;
+color:#fff
+}
+
+.social a {
+display:block;
+padding:4px
+}
+
+.social a:hover {
+background:#2580b2;
+padding-bottom:4px
+}
+
+.return {
+margin-left:22%;
+margin-top:4%
+}
+
+.return a {
+font:1.4vw 'Roboto Slab';
+background:#2580b2;
+color:#fff;
+text-decoration:none;
+padding:.15em .35em
+}
+
+.return a:hover {
+color:#000
+}
+
+/* ---------------------------------------- MOBILE ELEMENT SWITCH */
+
+@media (max-width: 950px) {
+.menu {
+margin-left:18%;
+margin-bottom:2%;
+margin-top:2%;
+width:80%
+}
+
+.menu a {
+display:inline-block;
+padding:4px;
+font:1.25em Helvetica;
+text-decoration:none;
+font-weight:500;
+color:#000
+}
+
+.menu a:hover {
+background:#2580b2;
+padding-bottom:4px;
+color:#fff
+}
+
+.social {
+clear:left;
+margin-left:18%;
+width:80%
+}
+
+.social a {
+display:inline-block;
+padding:4px;
+margin-bottom:2%
+}
+
+.social a:hover {
+background:#2580b2;
+padding-bottom:4px
+}
+
+.lt-box {
+float:none;
+clear:both;
+width:50%;
+padding:1% 2% 2%;
+border-radius:20px;
+background:hsla(100,100%,100%,0.25);
+-webkit-box-shadow:0 0 10px #fff;
+-moz-box-shadow:0 0 10px #fff;
+box-shadow:0 0 10px #fff;
+margin-left:18%
+}
+}

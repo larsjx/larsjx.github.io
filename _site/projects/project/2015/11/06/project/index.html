@@ -1,0 +1,181 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2 Different RPN Calculators</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Lars Johnson's Website">
+    <link rel="canonical" href="https://larsjx.github.io/projects/project/2015/11/06/project/">
+
+  <!-- Custom Snippet Highlighting
+    <link rel="stylesheet" href="/css/snippets.min.css">
+    <script src="/js/snippet-highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script> -->
+
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+            <div class="modal-header">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="/">Lars Johnson</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#background">Background</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#blog">Blog</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a class="page-scroll" href="/#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>2 Different RPN Calculators</h2>
+                            <p></p>
+                            <p><strong>November 06, 2015</strong></p>
+
+<h3>Overview</h3>
+<blockquote>
+  <p><strong>Reverse Polish Notation (RPN)</strong> is a mathematical notation in which every operator follows all of its operands, in contrast to Polish notation, which puts the operator in the prefix position. It is also known as postfix notation and is parenthesis-free as long as operator arities are fixed. The description “Polish” refers to the nationality of logician Jan Łukasiewicz, who invented (prefix) Polish notation in the 1920s.</p>
+
+  <p>Reverse Polish has been found to lead to faster calculations, for two reasons. Because reverse Polish calculators do not need expressions to be parenthesized, fewer operations need to be entered to perform typical calculations. Additionally, users of reverse Polish calculators made fewer mistakes than for other types of calculator.</p>
+
+  <p>–<a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Wikipedia</a></p>
+</blockquote>
+
+<h4>Below you will find the code for 2 RPN calculators. The first solution is written in Ruby and the second is written in JavaScript.</h4>
+
+<h3>Ruby RPN Calculator</h3>
+<h4>by Lars Johnson</h4>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">RPNCalculator</span>
+
+  <span class="k">def</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">expression</span><span class="p">)</span>
+    <span class="vi">@stack</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span>
+    <span class="vi">@expression</span> <span class="o">=</span> <span class="n">expression</span><span class="p">.</span><span class="nf">to_s</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">).</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">element</span><span class="o">|</span> <span class="n">element</span> <span class="p">}</span>
+    <span class="vi">@list</span> <span class="o">=</span> <span class="vi">@expression</span><span class="p">.</span><span class="nf">map!</span> <span class="p">{</span> <span class="o">|</span><span class="n">element</span><span class="o">|</span> <span class="n">element</span> <span class="o">=</span> <span class="no">Integer</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="k">rescue</span> <span class="n">element</span><span class="p">}</span>
+    <span class="vi">@list</span><span class="p">.</span><span class="nf">each_index</span> <span class="p">{</span> <span class="o">|</span><span class="n">index</span><span class="o">|</span>
+      <span class="vi">@list</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="nf">kind_of?</span><span class="p">(</span><span class="no">Integer</span><span class="p">)</span> <span class="p">?</span> <span class="vi">@stack</span> <span class="o">&lt;&lt;</span> <span class="vi">@list</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">:</span> <span class="k">case</span> <span class="vi">@list</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">when</span> <span class="s2">"+"</span>
+          <span class="vi">@value</span> <span class="o">=</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+          <span class="n">stack_it</span>
+        <span class="k">when</span> <span class="s2">"-"</span>
+          <span class="vi">@value</span> <span class="o">=</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+          <span class="n">stack_it</span>
+        <span class="k">when</span> <span class="s2">"*"</span>
+          <span class="vi">@value</span> <span class="o">=</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="vi">@stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+          <span class="n">stack_it</span>
+      <span class="k">end</span>
+    <span class="p">}</span>
+    <span class="nb">p</span> <span class="vi">@stack</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">stack_it</span>
+    <span class="mi">2</span><span class="p">.</span><span class="nf">times</span> <span class="p">{</span> <span class="vi">@stack</span><span class="p">.</span><span class="nf">pop</span> <span class="p">}</span>
+    <span class="vi">@stack</span> <span class="o">&lt;&lt;</span> <span class="vi">@value</span>
+  <span class="k">end</span>
+
+<span class="k">end</span>
+
+<span class="c1">################################################## Ruby Test Code</span>
+
+<span class="n">test_1</span> <span class="o">=</span> <span class="no">RPNCalculator</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">test_1</span><span class="p">.</span><span class="nf">evaluate</span><span class="p">(</span><span class="s2">"70 10 4 + 5 * -"</span><span class="p">)</span>
+
+<span class="n">test_2</span> <span class="o">=</span> <span class="no">RPNCalculator</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">test_2</span><span class="p">.</span><span class="nf">evaluate</span><span class="p">(</span><span class="s2">"150 10 4 + 5 * -"</span><span class="p">)</span></code></pre></figure>
+
+<h3>JavaScript RPN Calculator</h3>
+<h4>by Lars Johnson &amp; Paul Gouron</h4>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">RPN</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">string</span><span class="p">){</span>
+
+  <span class="kd">var</span> <span class="nx">poppush</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+          <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+          <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span>
+      <span class="p">}</span>
+
+  <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">s</span> <span class="o">&lt;</span> <span class="nx">input</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">s</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">s</span><span class="p">])</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">s</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"stack "</span> <span class="o">+</span> <span class="nx">stack</span><span class="p">)</span>
+
+      <span class="kd">var</span> <span class="nx">first</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">stack</span><span class="p">[</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+      <span class="kd">var</span> <span class="nx">second</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">stack</span><span class="p">[</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+      <span class="k">switch</span> <span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">s</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="s2">"+"</span><span class="p">:</span>
+          <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">first</span> <span class="o">+</span> <span class="nx">second</span>
+          <span class="nx">poppush</span><span class="p">()</span>
+          <span class="k">break</span>
+
+          <span class="k">case</span> <span class="s2">"-"</span><span class="p">:</span>
+          <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">first</span> <span class="o">-</span> <span class="nx">second</span>
+          <span class="nx">poppush</span><span class="p">()</span>
+          <span class="k">break</span>
+
+          <span class="k">case</span> <span class="s2">"*"</span><span class="p">:</span>
+          <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">first</span> <span class="o">*</span> <span class="nx">second</span>
+          <span class="nx">poppush</span><span class="p">()</span>
+          <span class="k">break</span>
+
+          <span class="k">case</span> <span class="s2">"/"</span><span class="p">:</span>
+          <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">first</span> <span class="o">/</span> <span class="nx">second</span>
+          <span class="nx">poppush</span><span class="p">()</span>
+          <span class="k">break</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">stack</span>
+<span class="p">}</span>
+
+<span class="c1">//################################################## JavaScript Test Code</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RPN</span><span class="p">(</span><span class="s2">"70 10 4 + 5 * -"</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RPN</span><span class="p">(</span><span class="s2">"70 10 +"</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RPN</span><span class="p">(</span><span class="s2">"70 A +"</span><span class="p">))</span> <span class="c1">// -&gt; NaN (letters...)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RPN</span><span class="p">(</span><span class="s2">"70 +"</span><span class="p">))</span> <span class="c1">// -&gt; NAN (missing a value)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RPN</span><span class="p">(</span><span class="s2">"5 75 /"</span><span class="p">))</span> <span class="c1">// -&gt; Return 15</span></code></pre></figure>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+</body>

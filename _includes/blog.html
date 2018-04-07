@@ -1,0 +1,22 @@
+<section id="blog">
+<div class="container">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Blog</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="columns">
+                <div class="col-sm-8 blog">
+                {% for post in site.posts %}
+                {% if post.categories contains 'blog' %}
+                <div class="post columns">
+                <ul>
+                <!-- <li><h4><a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">{{ post.title }}</a></h4></li> -->
+                <li><h4><a href="{{ post.url }}" class="title">{{ post.title }}</a></h4></li>
+                </ul>
+
+                </div>
+                {% endif %}
+                {% endfor %}
+                </div>
+                </div>
+</div>
+</section>
