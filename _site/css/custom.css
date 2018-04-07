@@ -1,0 +1,78 @@
+#menu {
+	background-color:#2e3842;
+}
+
+.major h2 {
+	padding-top:6em;
+}
+
+#one {
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+#one .icon {
+	color: white;
+}
+
+
+#two {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain2.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#two h2 {
+	font-size:1.5em;
+}
+
+#two h4 {
+	text-align:left;
+}
+
+#two p{
+	text-align:left;
+}
+
+#yung.image img {
+	margin-top:2em;
+}
+
+#keithly.image img {
+	margin-top:2em;
+  padding-bottom:2em;
+}
+
+#three {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.major p {
+	text-align: left;
+}
+
+#cta p {
+	line-height:1.5em;
+}
+
+@media screen and (max-width: 980px) {
+  #keithly.image img {
+    padding-bottom:0;
+}}
