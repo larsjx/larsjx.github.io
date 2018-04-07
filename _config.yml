@@ -2,10 +2,10 @@
 #
 
 # Site settings
-title: Yung Keithly LLP
+title: Lars Johnson
 description: Talent, Experience, and a Reputation for Success
-owner: Yung Keithly LLP # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
+owner: Lars Johnson # or company name
+first_published: 2018 # if migrating another site, the year of your first publish
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
