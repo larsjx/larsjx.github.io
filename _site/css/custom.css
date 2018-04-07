@@ -44,15 +44,27 @@
 	text-align:left;
 }
 
-#yung.image img {
+#y.image img {
 	margin-top:2em;
 }
 
-#keithly.image img {
+#k.image img {
 	margin-top:2em;
   padding-bottom:2em;
 }
 
+/*
+#about {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/woodgrain.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
 
 .major p {
 	text-align: left;
@@ -63,6 +75,6 @@
 }
 
 @media screen and (max-width: 980px) {
-  #keithly.image img {
+  #k.image img {
     padding-bottom:0;
 }}

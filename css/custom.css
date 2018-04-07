@@ -48,11 +48,11 @@
 	text-align:left;
 }
 
-#yung.image img {
+#y.image img {
 	margin-top:2em;
 }
 
-#keithly.image img {
+#k.image img {
 	margin-top:2em;
   padding-bottom:2em;
 }
@@ -77,6 +77,6 @@
 }
 
 @media screen and (max-width: 980px) {
-  #keithly.image img {
+  #k.image img {
     padding-bottom:0;
 }}
