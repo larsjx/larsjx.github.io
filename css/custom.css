@@ -36,9 +36,6 @@
   background-size: cover;
 }
 
-/* #two {
-  margin-top:.5em;
-} */
 
 #two h2 {
 	font-size:1.5em;
@@ -52,9 +49,9 @@
 	text-align:left;
 }
 
-/* #lars.image img {
+#two.image img {
 	margin-top:2em;
-} */
+}
 
 #k.image img {
 	margin-top:2em;
